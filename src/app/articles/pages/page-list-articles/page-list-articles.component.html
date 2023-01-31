@@ -1,0 +1,12 @@
+<!-- afficher tous les articles dans des cards  -->
+
+<div class="tr-cards">
+  <div class="tr-card" *ngFor="let article of articles">
+    <h2>{{ article.title }}</h2>
+    <p>{{ article.content }}</p>
+    <div class="tr-card-footer">
+      <a routerLink="/edit/{{ article.id }}">Modifier</a>
+      <a (click)="deleteArticle(article.id)">Supprimer</a>
+    </div>
+  </div>
+</div>
