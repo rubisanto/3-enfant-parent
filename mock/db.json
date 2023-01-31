@@ -1,0 +1,10 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "titre": "Titre du post 1",
+      "contenu": "Contenu du post 1",
+      "categorie": "Catégorie 1"
+    }
+  ]
+}
