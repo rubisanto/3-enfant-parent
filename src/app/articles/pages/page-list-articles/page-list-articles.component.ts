@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ArticlesService } from '../../articles.service';
 
 @Component({
   selector: 'app-page-list-articles',
@@ -6,8 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./page-list-articles.component.scss']
 })
 export class PageListArticlesComponent implements OnInit {
+  @Input () item !: any;
 
-  constructor() { }
+  constructor(private ArticlesServices : ArticlesService, private router : Router) {
+    console.log('articles')
+
+    this.ArticlesServices.getArticles().subscribe((data : any) => {
+      this.item = data;
+      console.log(this.item);
+    })
+  }
 
   ngOnInit(): void {
   }

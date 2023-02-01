@@ -9,7 +9,7 @@ export class ArticlesService {
   constructor(private http : HttpClient) { }
 
   getArticles(){
-    return this.http.get('https://jsonplaceholder.typicode.com/posts');
+    return this.http.get('http://localhost:4200/posts');
   }
 
 }
