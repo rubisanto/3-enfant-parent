@@ -4,6 +4,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { RouterModule } from '@angular/router';
 import { UiModule } from '../ui/ui.module';
 import { UiComponent } from '../ui/components/ui/ui.component';
+import { ArticlesModule } from '../articles/articles.module';
 
 
 
@@ -13,7 +14,8 @@ import { UiComponent } from '../ui/components/ui/ui.component';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+
 
   ],
   exports: [

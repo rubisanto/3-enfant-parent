@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CoreModule } from './core/core.module';
+import { ArticlesModule } from './articles/articles.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,8 @@ import { CoreModule } from './core/core.module';
     AppRoutingModule,
     CoreModule,
     HttpClientModule,
+    ArticlesModule
+
 
   ],
   providers: [],

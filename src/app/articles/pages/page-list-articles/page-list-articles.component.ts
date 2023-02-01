@@ -8,15 +8,18 @@ import { ArticlesService } from '../../articles.service';
   styleUrls: ['./page-list-articles.component.scss']
 })
 export class PageListArticlesComponent implements OnInit {
-  @Input () item !: any;
+
+  item : any;
 
   constructor(private ArticlesServices : ArticlesService, private router : Router) {
     console.log('articles')
 
     this.ArticlesServices.getArticles().subscribe((data : any) => {
       this.item = data;
-      console.log(this.item);
+      console.log(this.item, 'this.item')
+      console.log(data, 'data')
     })
+
   }
 
   ngOnInit(): void {
