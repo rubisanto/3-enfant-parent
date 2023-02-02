@@ -1,7 +1,9 @@
-<app-ui>
+<app-ui *ngIf="route === 'add'">
   <app-header class="tr-header"></app-header>
+  <app-page-add-articles class="tr-main"></app-page-add-articles>
+</app-ui>
 
-  <!-- <app-footer></app-footer> -->
-  <!-- mettre liste des articles -->
+<app-ui *ngIf="route === 'list'">
+  <app-header class="tr-header"></app-header>
   <app-page-list-articles class="tr-main"></app-page-list-articles>
 </app-ui>

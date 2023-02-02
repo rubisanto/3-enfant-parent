@@ -19,7 +19,8 @@ import { ArticlesModule } from './articles/articles.module';
     AppRoutingModule,
     CoreModule,
     HttpClientModule,
-    ArticlesModule
+    ArticlesModule,
+
 
 
   ],

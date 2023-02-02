@@ -1,9 +1,11 @@
-<!-- afficher tous les articles dans des cards  -->
-
-<div class="card tr-main">
-  <div class="card-body">
-    <h3 class="card-title">titre : {{ item.title }}</h3>
-    <p class="card-text">contenu</p>
-    <p class="card-text">Categorie</p>
+<div *ngFor="let article of item">
+  <div class="card tr-main">
+    <div class="card-body">
+      <h3 class="card-title">titre : {{ article.title }}</h3>
+      <p class="card-text">contenu : {{ article.content }}</p>
+      <p class="card-text">Categorie : {{ article.category }}</p>
+      <button (click)="modifyArticle(article.id, item)">Modifier</button>
+      <button>Supprimer</button>
+    </div>
   </div>
 </div>

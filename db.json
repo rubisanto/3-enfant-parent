@@ -5,6 +5,18 @@
       "title": "Titre du post 1",
       "content": "Contenu du post 1",
       "category": "Catégorie 1"
+    },
+    {
+      "id": 2,
+      "title": "Titre du post 2",
+      "content": "Contenu du post 2",
+      "category": "Catégorie 2"
+    },
+    {
+      "id": 3,
+      "title": "Titre du post 3",
+      "content": "Contenu du post 3",
+      "category": "Catégorie 3"
     }
   ]
 }

@@ -25,4 +25,15 @@ export class PageListArticlesComponent implements OnInit {
   ngOnInit(): void {
   }
 
-}
+  modifyArticle(id : any, item : any){
+    this.router.navigate(['articles', 'edit', id])
+  }
+
+  // deleteArticle(id : any){
+  //   this.ArticlesServices.deleteArticle(id).subscribe((data : any) => {
+  //     // supprimer l'article
+  //     this.item = this.item.filter((item : any) => item.id !== id);
+
+  //   })
+  }
+
